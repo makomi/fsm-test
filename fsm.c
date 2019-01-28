@@ -138,7 +138,7 @@ int main(void)
   printFsmEvents();
 
   // Get and process user input
-  while (runUi() == 0);
+  while (!runUi());
 
   printf("\nexit program\n");
 
