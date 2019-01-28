@@ -64,11 +64,11 @@ void printFsmEvents(void)
 // with the appropriate backlight events
 
 
-/// Initial FSM state
+// Initial FSM state
 teBacklightState fsmState = eBS_off;
 
 
-/// Inform the FSM about a new event
+// Inform the FSM about a new event
 void fsmEventHandler(teBacklightEvent event)
 {
   if (event < 0 || event >= eBE_count)
@@ -78,7 +78,7 @@ void fsmEventHandler(teBacklightEvent event)
 }
 
 
-/// Check if a recognized touch is valid
+// Check if a recognized touch is valid
 uint8_t backlightTouchIsValid(void)
 {
   return (fsmState == eBS_on) ? 1 : 0;
@@ -88,7 +88,7 @@ uint8_t backlightTouchIsValid(void)
 //------------------------------------------------------------------------------
 
 
-/// Get a single character without the need to hit 'return'
+// Get a single character without the need to hit 'return'
 char getch(void)
 {
   char   ch;
@@ -106,7 +106,7 @@ char getch(void)
 }
 
 
-/// User Interface
+// User Interface
 uint8_t runUi(void)
 {
   char ch = ' ';
