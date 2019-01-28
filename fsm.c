@@ -60,7 +60,7 @@ void printFsmEvents(void)
 // FSM's public API
 
 // Normally a systemEventHandler would call the FSM handler
-// by receiving the system ivents and calling the FSM handler
+// by receiving the system events and calling the FSM handler
 // with the appropriate backlight events
 
 
